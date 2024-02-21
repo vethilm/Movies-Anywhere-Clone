@@ -1,8 +1,10 @@
 import Thumbnail from "./Thumbnail";
+import Set from "./Set";
 import "./Row.css";
 
 function Row(props) {
-  var list = props.items;
+  var list = props.items; 
+
   return (
     <>
       <div className="row">
@@ -14,11 +16,24 @@ function Row(props) {
             </div>
           </>
         )}
-        <div className="scrollRow">
-          {props.items.map((item) => (
-            <Thumbnail sale="9.99" tbn={props.tbn} key={item} />
-          ))}
-        </div>
+        {props.rowType==null &&(
+          <>
+            <div className="scrollRow">
+              {props.items.map((item) => (
+                <Thumbnail sale="9.99" tbn={props.tbn} key={item} />
+              ))}
+            </div>
+          </>
+        )}
+        {props.rowType=="set" &&(
+          <>
+            <div className="scrollRow">
+              {props.items.map((item) => (
+                <Set tbn={props.tbn} key={item} />
+              ))}
+            </div>
+          </>
+        )}
 
         {/* add scroll arrows */}
       </div>

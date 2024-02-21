@@ -1,26 +1,24 @@
 .tbn{
-    float: left;
-    margin-right: 15px;
     flex: 0 0 auto;
     flex-direction: column;
     cursor: pointer;
 }
 
 .sm-portrait{
-    width:15%;
+    width:13%;
+    margin-right: 15px;
     aspect-ratio: 2/3;
 }
 .lg-portrait{
     width:18%;
-    aspect-ratio: 2/3;
+    margin-right: 15px;
 }
-.sm-portrait:hover, .lg-portrait:hover{
+.sm-portrait:hover, .lg-portrait:hover, .set:hover{
     opacity: 75%;
 }
 
 .landscape{
     width:30%;
-    aspect-ratio: 3/2;
 }
 .playBtn{
     background-color: aqua;
@@ -36,10 +34,9 @@
 }
 
 
-
 .thumbImg{
-    max-width: 100%;
-    object-fit: cover;
+    width: 100%;
+    object-fit:contain;
     border-radius: 5px;
 }
 

@@ -18,7 +18,7 @@ function Thumbnail(props) {
           <>
             <p className="saleText">
               <span className="saleHighlight">Sale </span>
-              from ${props.sale}
+              from ${props.sale}  
             </p>
           </>
         )}
