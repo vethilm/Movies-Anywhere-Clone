@@ -1,0 +1,60 @@
+.tbn{
+    float: left;
+    margin-right: 15px;
+    flex: 0 0 auto;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.sm-portrait{
+    width:15%;
+    aspect-ratio: 2/3;
+}
+.lg-portrait{
+    width:18%;
+    aspect-ratio: 2/3;
+}
+.sm-portrait:hover, .lg-portrait:hover{
+    opacity: 75%;
+}
+
+.landscape{
+    width:30%;
+    aspect-ratio: 3/2;
+}
+.playBtn{
+    background-color: aqua;
+    height:40px;
+    width: 40px;
+    position: relative;
+    z-index: 10;
+    top:0%;
+    left:2px;
+}
+.movieTitle{
+    color:white;
+}
+
+
+
+.thumbImg{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.saleText{
+    color:white;
+    align-self: flex-end;
+    margin: 0px auto;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.saleHighlight{
+    background-color: red;
+    padding:0px 2px;
+    margin: 3px;
+    letter-spacing: 2px;
+    border-radius: 15px;
+}
