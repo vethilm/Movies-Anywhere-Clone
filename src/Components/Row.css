@@ -35,6 +35,9 @@
     overflow-y: hidden;
     scrollbar-width: 0px;
 }
-/* 
-  last @ 2:45 - working on overflow x and arrow btn scroll
-*/
+
+/* Trending row */
+
+.trend-number{
+    color:white;
+}

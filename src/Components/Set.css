@@ -1,21 +1,21 @@
 
 .set{
     width: 18%;
-    display: flex;
     flex: 0 0 auto;
     flex-wrap: wrap;
-    padding-right: 15px;
+    margin-right: 15px;
 }
 .set-box {
     width: 100%;
     display: flex;
-    flex: 0 0 auto;
+
 }
 
 .set-portrait {
     width: 75%;
     margin-right: 5px;
     aspect-ratio: 2/3;
+    
 }
 
 .set-side-container {
@@ -25,8 +25,17 @@
 .set-side {
     width: 100%;
     margin: 5px 0px;
+    opacity: 40%;
 }
+.owned {
+    opacity: 100%;
+}
+
+
 .movieTitle{
-    align-self: flex-end;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+.subTitle {
+    color: #ddd;
+    font-weight: bolder;
 }

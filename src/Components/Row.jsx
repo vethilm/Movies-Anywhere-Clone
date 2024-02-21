@@ -20,7 +20,7 @@ function Row(props) {
           <>
             <div className="scrollRow">
               {props.items.map((item) => (
-                <Thumbnail sale="9.99" tbn={props.tbn} key={item} />
+                <Thumbnail tbn={props.tbn} key={item} />
               ))}
             </div>
           </>
@@ -34,6 +34,8 @@ function Row(props) {
             </div>
           </>
         )}
+
+
 
         {/* add scroll arrows */}
       </div>
