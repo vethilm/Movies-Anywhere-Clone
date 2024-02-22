@@ -10,18 +10,15 @@
     display: flex;
 
 }
-
 .set-portrait {
     width: 75%;
     margin-right: 5px;
     aspect-ratio: 2/3;
     
 }
-
 .set-side-container {
     flex-direction: column;
 }
-
 .set-side {
     width: 100%;
     margin: 5px 0px;
