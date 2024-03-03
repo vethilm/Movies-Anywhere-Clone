@@ -1,6 +1,6 @@
 
 .set{
-    width: 18%;
+    width: 18%; 
     flex: 0 0 auto;
     flex-wrap: wrap;
     margin-right: 15px;
@@ -8,7 +8,6 @@
 .set-box {
     width: 100%;
     display: flex;
-
 }
 .set-portrait {
     width: 75%;

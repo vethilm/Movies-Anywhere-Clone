@@ -5,12 +5,12 @@
 }
 
 .sm-portrait{
-    width:13%;
+    width:14.5%;
     margin-right: 15px;
     aspect-ratio: 2/3;
 }
 .lg-portrait{
-    width:18%;
+    width:20%;
     margin-right: 15px;
 }
 .sm-portrait:hover, .lg-portrait:hover, .set-box:hover{

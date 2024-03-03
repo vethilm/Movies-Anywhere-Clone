@@ -1,8 +1,29 @@
 h1 {
-    color: #bdbdbd;
-    padding: 0px 5px;
+    color: #aaa;
+    padding: 0px 7px 10px;
+    align-self: center;
+    border-bottom: 3px solid transparent;
+    font-family:"Open Sans", sans-serif;
+    font-weight:500;
+    font-style: bold;
+    font-size: 16px;
+}
+h1:hover{
+    color:white
 }
 
+.navTitle{
+    margin: 0px 5px;
+
+}
 .active{
     color:cyan;
+    border-color:  cyan;
+}
+
+.logoImg{
+    height: 27px;
+    align-self: center;
+    padding: 0px 15px;
+    object-fit: scale-down;
 }

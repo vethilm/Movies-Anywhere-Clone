@@ -51,26 +51,24 @@ collection rows
 import Header from "./Header-Components/Header";
 import Row from "./Row";
 import Banner from "./Banner";
-import { getWishList } from "./temp-data";
+import { getDealsList, getWishList } from "./temp-data";
 
 console.clear();
 
 const list = getWishList();
+const deals = getDealsList();
 function App() {
   return (
     <>
       <Header />
+
       {/* <Row header="Ready To Watch" items={list} tbn="tbn landscape" /> */}
       <Row header="My Wishlist" items={list} tbn="tbn sm-portrait" />
       <Row header="New Releases" items={list} tbn="tbn lg-portrait"></Row>
       <Row header="My Sets" items={list} rowType="set"></Row>
 
-      <Row header="Deals" items={list} tbn="tbn sm-portrait"></Row>
-      <Row items={list} tbn="tbn sm-portrait"></Row>
-
-      {/* <Row header="Celebrating Black Stories" items={list} tbn="tbn sm-portrait"></Row>
-      <Row header="Award Season Favorites" items={list} tbn="tbn sm-portrait"></Row>
-      <Row header="Rom-Coms" items={list} tbn="tbn sm-portrait"></Row> */}
+      <Row header="Deals" items={deals} tbn="tbn sm-portrait"></Row>
+      <Row items={deals} tbn="tbn sm-portrait"></Row>
 
       <Row header="Trending" items={list} tbn="tbn lg-portrait"></Row>
       {/* remove see all from trneding */}

@@ -8,9 +8,9 @@ function Set(props) {
         <a className="set-box" href="">
           <Thumbnail tbn="tbn set-portrait" src={props.src} />
           <div className="set-side-container">
-            <Thumbnail tbn="tbn set-side owned" />
-            <Thumbnail tbn="tbn set-side" />
-            <Thumbnail tbn="tbn set-side" />
+            <Thumbnail tbn="tbn set-side owned" src={props.src} />
+            <Thumbnail tbn="tbn set-side" src={props.src} />
+            <Thumbnail tbn="tbn set-side" src={props.src} />
           </div>
         </a>
         <h2 className="movieTitle">{props.item.title}</h2>

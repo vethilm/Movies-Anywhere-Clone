@@ -1,10 +1,9 @@
 import Thumbnail from "./Thumbnail";
 import Set from "./Set";
+import { ArrowBtnRight } from "./ArrowBtn";
 import "./Row.css";
 
 function Row(props) {
-  var list = props.items;
-  console.log(props.items);
   return (
     <>
       <div className="row">
@@ -25,6 +24,7 @@ function Row(props) {
                   key={item.title}
                   item={item}
                   src={item.src}
+                  sale={item.sale}
                 />
               ))}
             </div>
@@ -39,6 +39,7 @@ function Row(props) {
                   key={item.title}
                   item={item}
                   src={item.src}
+                  sale={item.sale}
                 />
               ))}
             </div>
