@@ -1,6 +1,7 @@
 import Thumbnail from "./Thumbnail";
 import Set from "./Set";
 import { ArrowBtnRight } from "./ArrowBtn";
+import { ArrowBtnLeft } from "./ArrowBtn";
 import "./Row.css";
 
 function Row(props) {
@@ -15,6 +16,7 @@ function Row(props) {
             </div>
           </>
         )}
+        <ArrowBtnLeft />
         {props.rowType == null && (
           <>
             <div className="scrollRow">
@@ -45,8 +47,7 @@ function Row(props) {
             </div>
           </>
         )}
-
-        {/* add scroll arrows */}
+        <ArrowBtnRight />
       </div>
     </>
   );

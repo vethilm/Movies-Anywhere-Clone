@@ -9,3 +9,13 @@ export function ArrowBtnRight() {
     </>
   );
 }
+
+export function ArrowBtnLeft() {
+  return (
+    <>
+      <div className="arrowContainer">
+        <div className="arrow left"></div>
+      </div>
+    </>
+  );
+}
