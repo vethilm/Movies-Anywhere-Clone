@@ -1,5 +1,6 @@
 {
   "name": "moviesclone",
+   "homepage": "https://vethim.github.io/Movies-Anywhere-Clone",
   "private": true,
   "version": "0.0.0",
   "type": "module",
