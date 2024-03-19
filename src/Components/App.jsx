@@ -47,7 +47,6 @@ mangaing your movies row
 collection rows
   square thumbnails with tile in photo
 */
-
 import Header from "./Header-Components/Header";
 import Row from "./Row";
 import Banner from "./Banner";
@@ -63,14 +62,13 @@ function App() {
       <Header />
 
       {/* <Row header="Ready To Watch" items={list} tbn="tbn landscape" /> */}
-      <Row header="My Wishlist" items={list} tbn="tbn sm-portrait" />
-      <Row header="New Releases" items={list} tbn="tbn lg-portrait"></Row>
+      <Row header="My Wishlist" items={list} tbn="tbn" />
+      <Row header="New Releases" items={list} tbn="tbn"></Row>
       <Row header="My Sets" items={list} rowType="set"></Row>
 
-      <Row header="Deals" items={deals} tbn="tbn sm-portrait"></Row>
-      <Row items={deals} tbn="tbn sm-portrait"></Row>
+      <Row header="Deals" items={deals} tbn="tbn"></Row>
 
-      <Row header="Trending" items={list} tbn="tbn lg-portrait"></Row>
+      <Row header="Trending" items={list} tbn="tbn"></Row>
       {/* remove see all from trneding */}
 
       <Banner />

@@ -16,7 +16,7 @@ function Row(props) {
             </div>
           </>
         )}
-        <ArrowBtnLeft />
+        {/* <ArrowBtnLeft /> */}
         {props.rowType == null && (
           <>
             <div className="scrollRow">
@@ -47,6 +47,7 @@ function Row(props) {
             </div>
           </>
         )}
+
         <ArrowBtnRight />
       </div>
     </>
