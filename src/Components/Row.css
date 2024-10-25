@@ -4,11 +4,9 @@
     flex-direction: column;
     width:100vw;
     margin:30px 0px;
-    border:1px solid red;
-    height: 300px;
+    height: 350px;
     position: relative;
 }
-
 .row-sm{
     height:300px;
 }
@@ -32,21 +30,22 @@
     float: right;
     margin: auto 30px;
     font-weight: bolder;
+    z-index: 10;
 }
 .seeAll:hover{
     color:white;
     cursor: pointer;
 }
 .scrollRow{
-    width: 100vw;
+    width: 98vw;
     height: 100%;
     margin-left: 30px;
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
     scrollbar-width: 0px;
-    border:1px solid cyan;
     position: relative;
+    border: 1px solid red;
 }
 
 /* Trending row */
@@ -59,13 +58,22 @@
 /*  arrows */
 .arrowContainer{
     background:rgb(0 0 0/0%);
+    border: none;
     width:40px;
     height: 100%;
     align-self: stretch;
     display:flex;
     position: absolute;
-    right:0%;
+    cursor: pointer;
+    z-index: 9;
 }
+.cRight{
+    right: 0%;
+}
+.cLeft{
+    left:0%;
+}
+
 .row:hover{
     .arrowContainer{
         background: rgb(0 0 0 / 50%);
@@ -81,6 +89,8 @@
     display: inline-block;
     padding: 8px;
     opacity: 0%;
+    border-radius: 2px;
+    z-index: 10;
  }
   
   .right {

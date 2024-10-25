@@ -10,7 +10,6 @@ const list = [
   "8",
   "9",
 ];
-
 const wishList = [
   {
     title: "Mortal Engines",

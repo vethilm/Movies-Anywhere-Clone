@@ -1,21 +1,21 @@
 import "./Row.css";
 
-export function ArrowBtnRight() {
+export function ArrowBtnRight(props) {
   return (
     <>
-      <div className="arrowContainer">
+      <button onClick={props.onClick} className="arrowContainer cRight">
         <div className="arrow right"></div>
-      </div>
+      </button>
     </>
   );
 }
 
-export function ArrowBtnLeft() {
+export function ArrowBtnLeft(props) {
   return (
     <>
-      <div className="arrowContainer">
+      <button onClick={props.onClick} className="arrowContainer cLeft">
         <div className="arrow left"></div>
-      </div>
+      </button>
     </>
   );
 }

@@ -1,84 +1,18 @@
-/*
-Components needed:
-header
-    logo
-    3 links
-    searchtool 
-    bell
-    profile
-subeader
-    3 links
-
-large display - 4 slides
-    image
-    title
-    subtitle
-    cta button
-    play button
-    dot slide diplay
-    arrows
-
-collected and wislisted stats
-
-continue watcing row
-  landscape tumbnail
-  title
-  subtitle
-  play button
-
-plain rows
-each row has 
-        a heading
-        different amounts of tumbnails
-              6 per scroll
-        prev and next arrows
-        some have sale text
-      
-sets row
-  large thumbnail
-  2-3 small thumbnails
-  title
-  1 of {total movies}
-  some have sale text
-
-mangaing your movies row
-  6 circle buttons w/ title and subtitle
-
-collection rows
-  square thumbnails with tile in photo
-*/
 import Header from "./Header-Components/Header";
-import Row from "./Row";
-import Banner from "./Banner";
-import { getDealsList, getWishList } from "./temp-data";
+import Home from "./Pages/Home";
+import { Routes, Route } from "react-router-dom";
 
-console.clear();
-
-const list = getWishList();
-const deals = getDealsList();
 function App() {
   return (
     <>
       <Header />
-
-      {/* <Row header="Ready To Watch" items={list} tbn="tbn landscape" /> */}
-      <Row header="My Wishlist" items={list} tbn="tbn" />
-      <Row header="New Releases" items={list} tbn="tbn"></Row>
-      <Row header="My Sets" items={list} rowType="set"></Row>
-
-      <Row header="Deals" items={deals} tbn="tbn"></Row>
-
-      <Row header="Trending" items={list} tbn="tbn"></Row>
-      {/* remove see all from trneding */}
-
-      <Banner />
-
-      <Row
-        header="Award Season Favorites"
-        items={list}
-        tbn="tbn sm-portrait"
-      ></Row>
-      <Row header="Rom-Coms" items={list} tbn="tbn sm-portrait"></Row>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="/redeem"></Route>
+        <Route path="/my-movies"></Route>
+        <Route path="*" element={<p>Path not resolved</p>} />
+      </Routes>
     </>
   );
 }

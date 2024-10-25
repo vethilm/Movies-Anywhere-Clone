@@ -4,7 +4,7 @@ function Thumbnail(props) {
   // const imgSrc = "\x22" + props.item.src + "\x22";
   return (
     <>
-      <div className={props.tbn}>
+      <div className="tbn">
         <img className="thumbImg" src={props.src}></img>
         {props.tbn === "tbn landscape" && (
           <>

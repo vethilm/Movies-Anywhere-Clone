@@ -4,16 +4,16 @@
     flex: 0 0 auto;
     flex-wrap: wrap;
     margin-right: 15px;
+    border: 1px solid yellow;
 }
 .set-box {
-    width: 100%;
+    width: 80%;
     display: flex;
 }
 .set-portrait {
-    width: 75%;
+    width: 5%;
     margin-right: 5px;
     aspect-ratio: 2/3;
-    
 }
 .set-side-container {
     flex-direction: column;

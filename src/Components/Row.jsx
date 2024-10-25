@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Thumbnail from "./Thumbnail";
 import Set from "./Set";
 import { ArrowBtnRight } from "./ArrowBtn";
@@ -5,6 +6,13 @@ import { ArrowBtnLeft } from "./ArrowBtn";
 import "./Row.css";
 
 function Row(props) {
+  const moveRight = (event) => {
+    event.target.parentElement.scrollLeft -= 1000;
+  };
+  const moveLeft = (event) => {
+    event.target.parentElement.scrollLeft += 1000;
+  };
+
   return (
     <>
       <div className="row">
@@ -16,39 +24,39 @@ function Row(props) {
             </div>
           </>
         )}
-        {/* <ArrowBtnLeft /> */}
+
         {props.rowType == null && (
           <>
             <div className="scrollRow">
+              <ArrowBtnLeft onClick={moveLeft} />
               {props.items.map((item) => (
                 <Thumbnail
-                  tbn={props.tbn}
                   key={item.title}
                   item={item}
                   src={item.src}
                   sale={item.sale}
                 />
               ))}
+              <ArrowBtnRight onClick={moveRight} />
             </div>
           </>
         )}
         {props.rowType == "set" && (
           <>
             <div className="scrollRow">
+              <ArrowBtnLeft onClick={moveLeft} />
               {props.items.map((item) => (
                 <Set
-                  tbn={props.tbn}
                   key={item.title}
                   item={item}
                   src={item.src}
                   sale={item.sale}
                 />
               ))}
+              <ArrowBtnRight onClick={moveRight} />
             </div>
           </>
         )}
-
-        <ArrowBtnRight />
       </div>
     </>
   );
